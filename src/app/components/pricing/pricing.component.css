@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;700&display=swap');
+
+body {
+  background-color: black;
+  font-family: 'Noto Kufi Arabic', sans-serif;
+  direction: rtl;
+  text-align: right;
+  
+}
+
+.top-header-curved-background {
+  background: linear-gradient(to bottom, #fefbfb 70%, rgba(255,255,255,0) 100%);
+  border-bottom-left-radius: 50% 5%;
+  border-bottom-right-radius: 50% 5%;
+  font-family: 'Noto Kufi Arabic', sans-serif;
+  direction: rtl;
+  text-align: right;
+}
+
+.pricing-card {
+  width: 400px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: 'Noto Kufi Arabic', sans-serif;
+  direction: rtl;
+  text-align: right;
+}
+
+.price-tag {
+  color: #e00000;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: 'Noto Kufi Arabic', sans-serif;
+  direction: rtl;
+  text-align: right;
+}
+
+/* Responsive Mobile Styles */
+@media (max-width: 768px) {
+  body {
+    text-align: center;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  .pricing-card {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .top-header-curved-background {
+    border-bottom-left-radius: 30% 10%;
+    border-bottom-right-radius: 30% 10%;
+    margin-top: 70px;
+  }
+
+  .flex {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .pricing-card {
+    max-width: 90%;
+  }
+}
